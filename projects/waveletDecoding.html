@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wavelet-Based Fast Decoding of 360° Videos</title>
+    <link rel="stylesheet" href="pp_styles.css">
+</head>
+<body>
+    <div class="back-button">
+        <a href="../index.html#publications">← Back to Main Page</a>
+    </div>
+	
+	<canvas id="background"></canvas>
+
+    <div class="project-page">
+
+
+        <!-- Teaser Image -->
+        <div class="teaser-image">
+            <img src="../images/wavelets_banner.JPG" alt="Teaser Image for the Project" />
+        </div>
+
+        <!-- Title -->
+        <div class="title">
+            <h1>Wavelet-Based Fast Decoding of 360° Videos</h1>
+        </div>
+
+        <!-- Conference/Type -->
+        <div class="conference">
+            <p><em>Published in IEEE Transactions on Visualization and Computer Graphics (TVCG, Proc. IEEE VR), February 2023</em></p>
+            <p><em>Presented at IEEE Conference on Virtual Reality and 3D User Interfaces (VR) 2023</em></p>
+        </div>
+
+        <!-- Authors with Affiliations -->
+        <div class="authors">
+            <div class="author">
+                <strong>Colin Groth</strong>
+                <div class="affiliation">TU Braunschweig</div>
+            </div>
+            <div class="author">
+                <strong>Sascha Fricke</strong>
+                <div class="affiliation">TU Braunschweig</div>
+            </div>
+            <div class="author">
+                <strong>Susana Castillo</strong>
+                <div class="affiliation">TU Braunschweig</div>
+            </div>
+            <div class="author">
+                <strong>Marcus Magnor</strong>
+                <div class="affiliation">TU Braunschweig</div>
+            </div>
+        </div>
+
+        <!-- PDF Link -->
+        <div class="paper-link">
+            <a href="../papers/Groth2023Wavelets.pdf" target="_blank">📄 Download Paper (PDF)</a>
+        </div>
+		
+		        <!-- Supplementary Materials -->
+        <div class="paper-link">
+            <a href="../papers/Groth2023wavelets_Supplemental.pdf" target="_blank">📄 Download Supplementary Materials (PDF)</a>
+        </div>
+
+        <!-- Abstract Section -->
+        <div class="abstract">
+            <h2>Abstract</h2>
+            <p>In this paper, we propose a wavelet-based video codec specifically designed for VR displays that enables real-time playback of high-resolution 360° videos. Our codec exploits the fact that only a fraction of the full 360° video frame is visible on the display at any time. To load and decode the video viewport-dependently in real time, we make use of the wavelet transform for intra- as well as inter-frame coding. Thereby, the relevant content is directly streamed from the drive, without the need to hold the entire frames in memory. With an average of 193 frames per second at 8192 × 8192-pixel full-frame resolution, the conducted evaluation demonstrates that our codec’s decoding performance is up to 272% higher than that of the state-of-the-art video codecs H.265 and AV1 for typical VR displays. By means of a perceptual study, we further illustrate the necessity of high frame rates for a better VR experience. Finally, we demonstrate how our wavelet-based codec can also directly be used in conjunction with foveation for further performance increase.</p>
+        </div>
+
+
+
+        <!-- Video Demonstration -->
+        <div class="video">
+            <h2>Teaser Video</h2>
+            <video controls width="600">
+                <source src="https://graphics.tu-bs.de/upload/publications/groth23wavelets/Final_publish.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+			<h2>Presentation Video</h2>
+			<iframe width="600" height="338"
+				src="https://www.youtube.com/embed/VqgEgkRDEiE" 
+				title="YouTube video player" 
+				frameborder="0" 
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+				allowfullscreen>
+			</iframe>
+        </div>
+
+        <!-- Code Repository -->
+        <div class="code">
+            <h2>Code</h2>
+            <a href="https://github.com/ColinGroth/Wavelet_Codec_360" target="_blank">🔗 View on GitHub</a>
+        </div>
+
+        <!-- BibTeX Citation -->
+        <div class="citation">
+            <h2>BibTeX Citation</h2>
+            <pre>
+@article{groth2023wavelet-based,
+  title = {Wavelet-Based Fast Decoding of 360\textdegree  Videos},
+  author = {Groth, Colin and Fricke, Sascha and Castillo, Susana and Magnor, Marcus},
+  journal = {{IEEE} Transactions on Visualization and Computer Graphics ({TVCG}, Proc. {IEEE} {VR})},
+  doi = {10.1109/{TVCG}.2023.3247080},
+  pages = {1--9},
+  month = {Feb},
+  year = {2023}
+}
+            </pre>
+        </div>
+    </div>
+	
+  <script src="pp_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,451 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; /* Light weight */
+  background: #1e1e1e;
+  overflow-x: hidden;
+  color: #ffffff; /*#FF8300;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+canvas {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0; /* Stays behind all other content */
+}
+
+#background { 
+	position: fixed; 
+}
+
+/* Adjust canvas */
+#front-animation {
+  position: absolute; /* Positioned relative to the nearest positioned ancestor (header) */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Matches the header dimensions */
+  z-index: 1; /* Ensures it's behind the header content but above the background */
+  pointer-events: none; /* Prevents interaction with the canvas */
+}
+
+/* Header adjustments */
+.header {
+  position: relative; /* Ensures that #front-animation is positioned relative to this element */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Front content */
+.front {
+  position: relative; /* To place it above the #front-animation canvas */
+  z-index: 10; /* Ensures it is above #front-animation */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+
+.front h1 {
+	font-size: 4em;
+	margin: 0;
+	text-shadow: 0px 0px 10px #82aef1;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 2px solid #82aef1;
+	animation: typing 4s steps(20, end), blink 0.7s step-end infinite;
+	animation-fill-mode: forwards;
+}
+
+.front p {
+	font-size: 1.5em;
+	margin: 10px 0;
+	opacity: 0;
+	animation: fadeIn 2s ease-in-out 4s forwards;
+}
+
+@keyframes typing {
+	from { width: 0; }
+	to { width: 11ch; }
+}
+
+@keyframes blink {
+	50% { border-color: transparent; }
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+.nav-bar{
+	position: fixed;
+	display: none;
+	background: white;
+	width: 100%;
+	height: 40px;
+	color: #333;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	top: 0;  
+	align-items: center;
+	justify-content: space-between; 
+	z-index: 2;
+}
+
+.top-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Center .top-nav */
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 15px; /* Adjust spacing between nav links */
+}
+
+.nav-bar h2 {
+  margin-left: 2%;
+  font-size: 22pt;
+}
+
+.top-nav a {
+  color: #000; 
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Allows stacking of elements (image container, then publications) */
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically if .content has a defined height */
+  min-height: 100vh; /* Optional: makes the main section take the full viewport height */
+  max-width: 800px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center; 
+  background: linear-gradient(
+    to right,
+    rgba(30, 30, 30, 0) 0%, /* Fully transparent at the left */
+    rgba(30, 30, 30, 1) 20%, /* Semi-opaque in the center */
+    rgba(30, 30, 30, 1) 80%, /* Semi-opaque in the center */
+    rgba(30, 30, 30, 0) 100% /* Fully transparent at the right */
+  );
+  z-index: 1;
+}
+
+.profile-image-container {
+  width: 250px; /* Desired width of the circular container */
+  height: 250px; /* Desired height of the circular container */
+  border-radius: 50%; /* Makes the container circular */
+  overflow: hidden; /* Ensures no overflow outside the circle */
+  background-image: url('images/colingroth.jpg'); /* Set your image here */
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center 26%; /* Centers the image by default */
+  margin: 3% 5%;
+}
+
+.intro-text{
+  width: 70%;
+  margin-bottom: 80px;
+}
+
+#toggle-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #82aef1; 
+    background: none; /* Transparent background */
+    border: 2px solid #ccc; 
+    border-radius: 50px; /* Rounded button */
+    cursor: pointer;
+    text-transform: uppercase; /* Capitalized text */
+    letter-spacing: 1px; /* Slight spacing for style */
+    transition: all 0.3s ease-in-out;
+}
+
+#toggle-button:hover {
+    background-color: #aaa; 
+    color: #fff; /* White text on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for hover effect */
+}
+
+
+section {
+  margin-bottom: 30px;
+  margin-top: -50px;
+  padding-top: 50px
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+#publications{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 80%
+}
+
+#publications h3{
+    font-size: 1.1em;
+    color: #82aef1;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+.publication-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+    padding: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.publication-item img {
+	width: 40%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.publication-item .title a {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #eee;
+	background: none;
+   text-decoration: none;
+}
+
+.publication-item .title a:hover {
+   	background: linear-gradient(to right, #87cefa, #333366);
+	-webkit-background-clip: text; /* Clips the background to the text */
+    color: transparent;
+}
+
+
+.publication-item .authors {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+.publication-item .conference{
+    font-size: 0.9em;
+    color: #bbb;
+    margin-top: 5px;
+}
+
+.publication-item .conference-meta{
+	font-size: 0.85em;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+.publication-item .type {
+	font-size: 0.85em;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+.publication-item .awards {
+    font-size: 0.9em;
+    color: #DAA520; /* Gold color */
+    font-weight: bold;
+    background-color: rgba(255, 215, 0, 0.1); /* Light gold background */
+    padding: 3px 6px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.publication-item .awards:before {
+    content: "🏆 "; /* Trophy icon */
+    font-size: 1em;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.publication-item .date {
+    display: none;
+	font-size: 0.85em;
+    color: #999;
+    margin-top: 5px;
+}
+
+
+.timeline-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.experience-timeline {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.stage {
+    position: relative;
+    flex: 0 0 auto;
+    width: 200px;
+    margin: 0 80px;
+    background: #2c3e50;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s, background 0.3s;
+    z-index: 2; /* Ensure stages are above the lines */
+}
+
+.stage.active {
+    background: #82aef1;
+    transform: scale(1.1);
+}
+
+.stage-logo {
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.stage-info {
+    padding: 10px;
+}
+
+.timeline-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: #34495e;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.timeline-arrow:hover {
+    background: #82aef1;
+}
+
+.timeline-arrow.left {
+    left: 10px;
+}
+
+.timeline-arrow.right {
+    right: 10px;
+}
+
+.timeline-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1; /* Ensure lines are behind the stages */
+}
+
+.year-label {
+    position: absolute;
+    font-size: 1em;
+    font-weight: bold;
+    background: #34495e;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Prevent interfering with scrolling */
+    z-index: 3; /* Ensure year labels are above the lines */
+}
+
+
+
+
+
+
+
+.contact-links {
+  display: flex;
+  justify-content: center; /* Center-aligns the content */
+  align-items: center; /* Vertically aligns the content */
+  gap: 1rem; /* Adds space between items */
+  font-size: 1rem; /* Adjusts the font size */
+  font-family: 'Lato', sans-serif; /* Optional: Lato font for consistent design */
+  margin-bottom: 70px;
+  margin-top: 30px;
+}
+
+.contact-item {
+  color: #dedede; /* Nice blue for links */
+  text-decoration: none; /* Removes underline */
+  font-weight: 400; /* Regular weight for easy readability */
+}
+
+.contact-item:hover {
+  color: #87cefa; /* Slightly darker blue on hover */
+}
+
+
+
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #333;
+  color: #ddd;
+  z-index: 1;
+}
+
+
+
+

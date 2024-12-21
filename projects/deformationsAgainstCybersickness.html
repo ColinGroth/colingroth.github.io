@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersickness Reduction via Gaze-Contingent Image Deformation</title>
+    <link rel="stylesheet" href="pp_styles.css">
+</head>
+<body>
+    <div class="back-button">
+        <a href="../index.html#publications">← Back to Main Page</a>
+    </div>
+	
+	<canvas id="background"></canvas>
+
+    <div class="project-page">
+
+        <!-- Teaser Image -->
+        <div class="teaser-image">
+            <img src="../images/teaser_deformations.JPG" alt="Teaser Image for the Project" />
+        </div>
+
+        <!-- Title -->
+        <div class="title">
+            <h1>Cybersickness Reduction via Gaze-Contingent Image Deformation</h1>
+        </div>
+
+        <!-- Conference/Type -->
+        <div class="conference">
+            <p><em>Published in ACM Transactions on Graphics (Proc. of SIGGRAPH), Vol. 43, July 2024</em></p>
+            <p><em>Presented at SIGGRAPH 2024</em></p>
+        </div>
+
+        <!-- Authors with Affiliations -->
+        <div class="authors">
+            <div class="author">
+                <strong>Colin Groth</strong>
+                <div class="affiliation">TU Braunschweig</div>
+            </div>
+            <div class="author">
+                <strong>Marcus Magnor</strong>
+                <div class="affiliation">TU Braunschweig</div>
+            </div>
+            <div class="author">
+                <strong>Steve Grogorick</strong>
+                <div class="affiliation">TU Braunschweig</div>
+            </div>
+            <div class="author">
+                <strong>Martin Eisemann</strong>
+                <div class="affiliation">TU Braunschweig</div>
+            </div>
+            <div class="author">
+                <strong>Piotr Didyk</strong>
+                <div class="affiliation">Università della Svizzera italiana</div>
+            </div>
+        </div>
+		
+		        <!-- PDF Link (if available) -->
+        <div class="paper-link">
+            <a href="../papers/TOG24_Groth_sickness.pdf" target="_blank">📄 Download Paper (PDF)</a>
+        </div>
+
+        <!-- Abstract Section -->
+        <div class="abstract">
+            <h2>Abstract</h2>
+            <p>Virtual reality has ushered in a revolutionary era of immersive content perception. However, a persistent challenge in dynamic environments is the occurrence of cybersickness arising from a conflict between visual and vestibular cues. Prior techniques have demonstrated that limiting illusory self-motion, so-called vection, by blurring the peripheral part of images, introducing tunnel vision, or altering the camera path can effectively reduce the problem. Unfortunately, these methods often alter the user's experience with visible changes to the content. In this paper, we propose a new technique for reducing vection and combating cybersickness by subtly lowering the screen-space speed of objects in the user's peripheral vision. The method is motivated by our hypothesis that small modifications to the objects' velocity in the periphery and geometrical distortions in the peripheral vision can remain unnoticeable yet lead to reduced vection. This paper describes the experiments supporting this hypothesis and derives its limits. Furthermore, we present a method that exploits these findings by introducing subtle, screen-space geometrical distortions to animation frames to counteract the motion contributing to vection. We implement the method as a real-time post-processing step that can be integrated into existing rendering frameworks. The final validation of the technique and comparison to an alternative approach confirms its effectiveness in reducing cybersickness.</p>
+        </div>
+
+        <!-- Video Section -->
+        <div class="video">
+            <h2>Video Demonstration</h2>
+			<iframe width="600"   height="338"
+				src="https://www.youtube.com/embed/pY6c83jDYCM" 
+				title="YouTube video player" 
+				frameborder="0" 
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+				allowfullscreen>
+			</iframe>
+        </div>
+
+        <!-- Code Repository -->
+        <div class="code">
+            <h2>Code</h2>
+            <a href="https://github.com/ColinGroth/DeformationsAgainstCybersickness" target="_blank">🔗 View on GitHub</a>
+        </div>
+
+
+        <!-- BibTeX Citation -->
+        <div class="citation">
+            <h2>BibTeX Citation</h2>
+            <pre>
+@article{groth2024cybersickness,
+  title = {Cybersickness Reduction via Gaze-Contingent Image Deformation},
+  author = {Groth, Colin and Magnor, Marcus and Grogorick, Steve and Eisemann, Martin and Didyk, Piotr},
+  journal = {{ACM} Transactions on Graphics (Proc. of Siggraph)},
+  doi = {10.1145/3658138},
+  volume = {43},
+  number = {4},
+  pages = {1--14},
+  month = {Jul},
+  year = {2024}
+}
+            </pre>
+        </div>
+    </div>
+	
+  <script src="pp_script.js"></script>
+</body>
+</html>

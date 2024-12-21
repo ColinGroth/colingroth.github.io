@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colin Groth</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="front-animation"></canvas>
+  
+  <header class="header">
+	<div class="front">
+		<h1>Colin Groth</h1>
+		<p>Postdoc | Computer Graphics Enthusiast</p>
+	</div>
+
+	<div class="nav-bar">
+	  <h2>Colin Groth</h2>
+	  <nav class="top-nav">
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  
+  <canvas id="background"></canvas>
+
+
+  
+  <main class="content">
+    <div class="profile-image-container"></div>
+	
+	<section class="intro-text">
+		<p id="intro-short">
+			Welcome!</br></br>
+			I'm a Postdoc at the <b>Max Planck Institute for Informatics</b> in Saarbrücken, where I'm part of Hans-Peter Seidel's Computer Graphics Department.
+		</p>
+		<div id="intro-full" style="display: none;">
+			<p>
+				I have the pleasure of working with Karol Myszkowski and an incredible group of colleagues who inspire me daily.
+				My academic journey took root at the <b>Technische Universität Braunschweig</b>, where I completed my master’s and PhD under the guidance of Prof. Marcus Magnor.
+				</br></br>
+				My research is driven by a fascination with human perception — mainly visual, but also vestibular and tactile — and its potential to enhance computer graphics.
+				<b>Virtual reality</b> holds a special place in my heart, having been the focus of my thesis. My interests further extend to eye tracking, physiological measurements, and novel forms of vestibular stimulation.
+				But as every graphics researcher, I am also a sucker for beautiful graphics and fast renderings.
+				</br></br>
+				Beyond the lab, you’ll likely find me outdoors: paddling through open water, catching views from mountain peaks, or rocking out at a metalcore concert.
+				And nothing beats a <b>good burrito</b> while watching the sunset after a day well-spent.
+				<br><br>Reach out to me!
+			</p>
+		</div>
+		<button id="toggle-button" onclick="toggleText()">More</button>
+	</section>
+
+  <section id="publications">
+  <h2>Publications</h2>
+  
+  <h3>2024</h3>
+  <div class="publication-item">
+	  <img src="images/Scholz-SAP24.jpg" alt="Project Image" />
+	  <div class="title">
+		  <a href="projects/scholz24velocity.html">Measuring Velocity Perception Regarding Stimulus Eccentricity</a>
+	  </div>
+	  <div class="authors">
+		  Timon Scholz, <strong>Colin Groth</strong>, Susana Castillo, Martin Eisemann, Marcus Magnor
+	  </div>
+	  <div class="conference">
+		  in<em> Proc. ACM Symposium on Applied Perception (SAP)</em>
+	  </div>
+	  <div class="conference-meta">
+		no. 4, ACM, pp. 1-9
+	  </div>
+	  <div class="date">
+		  August 2024
+	  </div>
+  </div>
+  
+  <div class="publication-item">
+	  <img src="images/categorys.png" alt="Project Image" />
+	  <div class="title">
+		  <a href="projects/PhDthesis.html">Perception-Based Techniques to Enhance User Experience in Virtual Reality</a>
+	  </div>
+	  <div class="authors">
+		  <strong>Colin Groth</strong>
+	  </div>
+	  <div class="type">
+		  <em>PhD thesis</em>, TU Braunschweig
+	  </div>
+	  <div class="date">
+		  August 2024
+	  </div>
+  </div>
+  
+  <div class="publication-item">
+  	  <img src="images/Capture.png" alt="Project Image" />
+	  <div class="title">
+		  <a href="projects/deformationsAgainstCybersickness.html">Cybersickness Reduction via Gaze-Contingent Image Deformation</a>
+	  </div>
+	  <div class="authors">
+		  <strong>Colin Groth</strong>, Marcus Magnor, Steve Grogorick, Martin Eisemann, Piotr Didyk
+	  </div>
+	  <div class="conference">
+		  in<em> ACM Transactions on Graphics (TOG, Proc. ACM Siggraph)</em>
+	  </div>
+	  <div class="conference-meta">
+		vol. 43, no. 4, pp. 1-14
+	  </div>
+	  <div class="date">
+		  July 2024
+	  </div>
+  </div>
+  
+  <div class="publication-item">
+	  <div class="title">
+		  <a>ICG Report 2021-2023</a>
+	  </div>
+	  <div class="authors">
+		  Marcus Magnor, Martin Eisemann, Susana Castillo, Steve Grogorick, Jan-Philipp Tauscher, Sascha Fricke, Fabian Friederichs, <strong>Colin Groth</strong>, Florian Hahlbohm, Anika Jewst, Moritz Kappel, Felix Lehner, Jannis Malte Möller, Michelle Klages, Anja Martens, Carsten Götze
+	  </div>
+	  <div class="date">
+		  January 2024
+	  </div>
+  </div>
+  
+  <h3>2023</h3>
+  
+  <div class="publication-item">
+  	  <img src="images/Groth-VRST2023.jpg" alt="Project Image" />
+	  <div class="title">
+		  <a href="projects/handRedirection.html">Instant Hand Redirection in Virtual Reality Through Electrical Muscle Stimulation-Triggered Eye Blinks</a>
+	  </div>
+	  <div class="authors">
+		  <strong>Colin Groth</strong>, Timon Scholz, Susana Castillo, Jan-Philipp Tauscher, Marcus Magnor
+	  </div>
+	  <div class="conference">
+		  in<em> ACM Symposium on Virtual Reality Software and Technology (VRST)</em>
+	  </div>
+	  <div class="conference-meta">
+		no. 37, pp. 1-11
+	  </div>
+	  <div class="date">
+		  August 2023
+	  </div>
+  </div>
+  
+  <div class="publication-item">
+    	  <img src="images/groth2023wavelets.jpg" alt="Project Image" />
+	  <div class="title">
+		  <a href="projects/waveletDecoding.html">Wavelet-Based Fast Decoding of 360° Videos</a>
+	  </div>
+	  <div class="authors">
+		  <strong>Colin Groth</strong>, Sascha Fricke, Susana Castillo, Marcus Magnor
+	  </div>
+	  <div class="conference">
+		  in<em> IEEE Transactions on Visualization and Computer Graphics (TVCG, Proc. IEEE VR)</em>
+	  </div>
+	  <div class="conference-meta">
+		IEEE, pp. 1-9
+	  </div>
+	  <div class="date">
+		  February 2023
+	  </div>
+  </div>
+  
+  <h3>2022</h3>
+  
+  <div class="publication-item">
+    	  <img src="images/Groth-TVCG22.png" alt="Project Image" />
+	  <div class="title">
+		  <a href="projects/gvs.html">Omnidirectional Galvanic Vestibular Stimulation in Virtual Reality</a>
+	  </div>
+	  <div class="authors">
+		  <strong>Colin Groth</strong>, Jan-Philipp Tauscher, Nikkel Heesen, Max Hattenbach, Susana Castillo, Marcus Magnor
+	  </div>
+	  <div class="conference">
+		  in<em> IEEE Transactions on Visualization and Computer Graphics (TVCG, Proc. IEEE VR)</em>
+	  </div>
+	  <div class="conference-meta">
+		vol. 28, no. 5, pp. 2234-2244
+	  </div>
+	  <div class="awards">
+		  <em>Honorable Mention Award</em>
+	  </div>
+	  <div class="date">
+		  March 2022
+	  </div>
+  </div>
+  
+  <h3>2021</h3>
+  
+  <div class="publication-item">
+	  <div class="title">
+		  <a>ICG Report 2018-2020</a>
+	  </div>
+	  <div class="authors">
+		  Marcus Magnor, Martin Eisemann, Susana Castillo, Steve Grogorick, Sascha Fricke, <strong>Colin Groth</strong>, Moritz Kappel, Marc Kassubeck, Moritz Mühlhausen, Jan-Philipp Tauscher, Markus Wedekind, Leslie Wöhler, Carsten Götze, Michelle Klages, Anja Martens
+	  </div>
+	  <div class="date">
+		  April 2021
+	  </div>
+  </div>
+  
+  <div class="publication-item">
+    	  <img src="images/foveator_visualisation.png" alt="Project Image" />
+	  <div class="title">
+		  <a href="projects/visualReductionGames.html">Visual Techniques to Reduce Cybersickness in Virtual Reality</a>
+	  </div>
+	  <div class="authors">
+		  <strong>Colin Groth</strong>, Jan-Philipp Tauscher, Nikkel Heesen, Susana Castillo, Marcus Magnor
+	  </div>
+	  <div class="conference">
+		  in<em> Proc. IEEE Conference on Virtual Reality and 3D User Interfaces (VR)</em>
+	  </div>
+	  <div class="conference-meta">
+		IEEE, pp. 486-487
+	  </div>
+	  <div class="date">
+		  March 2021
+	  </div>
+  </div>
+  
+  <div class="publication-item">
+    	  <img src="images/composited_text_alpha.png" alt="Project Image" />
+	  <div class="title">
+		  <a href="projects/visualReductionVids.html">Mitigation of Cybersickness in Immersive 360° Videos</a>
+	  </div>
+	  <div class="authors">
+		  <strong>Colin Groth</strong>, Jan-Philipp Tauscher, Nikkel Heesen, Steve Grogorick, Susana Castillo, Marcus Magnor
+	  </div>
+	  <div class="conference">
+		  in <em>IEEE Virtual Reality Workshop on Immersive Sickness Prevention (WISP)</em>
+	  </div>
+	  <div class="conference-meta">
+		IEEE, pp. 169-177
+	  </div>
+	  <div class="date">
+		  March 2021
+	  </div>
+  </div>
+  
+  <h3>2020</h3>
+  
+  <div class="publication-item">
+    	  <img src="images/Groth_CASA2020.png" alt="Project Image" />
+	  <div class="title">
+		  <a href="projects/automaticReenactment.html">Altering the Conveyed Facial Emotion Through Automatic Reenactment of Video Portraits</a>
+	  </div>
+	  <div class="authors">
+		  <strong>Colin Groth</strong>, Jan-Philipp Tauscher, Susana Castillo, Marcus Magnor
+	  </div>
+	  <div class="conference">
+		  in<em> Proc. International Conference on Computer Animation and Social Agents (CASA)</em>
+	  </div>
+	  <div class="conference-meta">
+		vol. 1300, Springer, Cham, pp. 128-135
+	  </div>
+	  <div class="date">
+		  November 2020
+	  </div>
+  </div>
+  
+  <div class="publication-item">
+    	  <img src="images/groth_MSC_thesis.png" alt="Project Image" />
+	  <div class="title">
+		  <a href="projects/MasterThesis.html">Automatic Face Re-Enactment in Real-World Portrait Videos to Manipulate Emotional Expression</a>
+	  </div>
+	  <div class="authors">
+		  <strong>Colin Groth</strong>
+	  </div>
+	  <div class="type">
+		  <em>Master's thesis</em>, Institut für Computergraphik, TU Braunschweig
+	  </div>
+	  <div class="awards">
+		  <em>"AI-Talent" Award of the German Ministry</em>
+	  </div>
+	  <div class="date">
+		  April 2020
+	  </div>
+  </div>
+</section>
+
+
+<section id="experience">
+<h2>Academic Journey</h2>
+<div class="timeline-container">
+    <button class="timeline-arrow left">&lt;</button>
+    <div class="experience-timeline">
+	<div class="stage" data-year="2024">
+      <img src="images/logos/nyu.png" alt="Logo" class="stage-logo" />
+      <div class="stage-info">
+        <h3>Research Stay</h3>
+        <p>New York University</p>
+        <p>NY, USA</p>
+      </div>
+    </div>
+    <div class="stage" data-year="2024">
+      <img src="images/logos/mpi.jpg" alt="Logo" class="stage-logo" />
+      <div class="stage-info">
+        <h3>Postdoctoral Researcher</h3>
+        <p>Max Planck Institute for Informatics</p>
+        <p>Saarbrücken, Germany</p>
+      </div>
+    </div>
+    <div class="stage" data-year="2023">
+      <img src="images/logos/usi.png" alt="Logo" class="stage-logo" />
+      <div class="stage-info">
+        <h3>Visiting Researcher</h3>
+        <p>Università della Svizzera italiana</p>
+        <p>Lugano, Switzerland</p>
+      </div>
+    </div>
+    <div class="stage" data-year="2020">
+      <img src="images/logos/tubs.jpg" alt="Logo" class="stage-logo" />
+      <div class="stage-info">
+        <h3>Ph.D. Student</h3>
+        <p>Technische Universität Braunschweig</p>
+        <p>Braunschweig, Germany</p>
+      </div>
+    </div>
+	    <div class="stage" data-year="2018">
+      <img src="images/logos/tubs.jpg" alt="Logo" class="stage-logo" />
+      <div class="stage-info">
+        <h3>Master Student</h3>
+        <p>Technische Universität Braunschweig</p>
+        <p>Braunschweig, Germany</p>
+      </div>
+    </div>
+	    <div class="stage" data-year="2017">
+      <img src="images/logos/manitoba.png" alt="Logo" class="stage-logo" />
+      <div class="stage-info">
+        <h3>International Studies</h3>
+        <p>University of Manitoba</p>
+        <p>Winnipeg, Canada</p>
+      </div>
+    </div>
+	    <div class="stage" data-year="2014">
+      <img src="images/logos/ostfalia.jpg" alt="Logo" class="stage-logo" />
+      <div class="stage-info">
+        <h3>Bachelor Student</h3>
+        <p>Ostfalia University of Applied Sciences</p>
+        <p>Wolfenbüttel, Germany</p>
+      </div>
+    </div>
+	    </div>
+    <button class="timeline-arrow right">&gt;</button>
+  
+    <svg class="timeline-svg">
+        <!-- Dynamic SVG paths will be generated here -->
+    </svg>  
+</div>
+</section>
+
+
+
+	
+	<section id="contact">
+      <h2>Contact</h2>
+      <p><strong>Colin Groth</strong></br>Max Planck Institute for Informatics<br>
+         D4: Computer Graphics<br>
+         Campus E1 4, Room 205<br>
+         66123 Saarbrücken<br> 
+		 Germany</p>
+	 <div class="contact-links">
+      <a href="mailto:cgroth@mpi-inf.mpg.de" class="contact-item">cgroth@mpi-inf.mpg.de</a>
+      <span class="separator">|</span>
+      <span class="contact-item">+49 681 9325 4005</span>
+      <span class="separator">|</span>
+      <a href="https://www.linkedin.com/in/colin-groth-7b0475200/" class="contact-item">LinkedIn</a>
+     </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Have a great day! :)</p>
+  </footer>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
