@@ -354,3 +354,8 @@ window.addEventListener('load', () => {
 
 
 
+//%%%%%%%%%%%%%%%
+
+function scrollToContent() {
+  document.querySelector('.content').scrollIntoView({ behavior: 'smooth' });
+}
