@@ -325,6 +325,20 @@ section h2 {
     margin-top: 5px;
 }
 
+@media (max-width: 600px) {
+  #projects, #publications,
+  .project, .publication-item {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 1rem;
+  }
+
+  .project .title a,
+  .publication-item .title a {
+    word-break: break-word;
+    hyphens: auto;
+  }
+}
 
 .timeline-container {
     position: relative;
