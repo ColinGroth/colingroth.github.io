@@ -180,12 +180,6 @@ canvas {
   z-index: 1;
 }
 
-@media (max-width: 800px) {
-  .content {  
-	max-width: 100%;
-  }
-}
-
 .profile-image-container {
   width: 250px; /* Desired width of the circular container */
   height: 250px; /* Desired height of the circular container */
@@ -472,5 +466,14 @@ footer {
 }
 
 
+@media (max-width: 800px) {
+  .content {  
+	max-width: 100%;
+  }
+  
+  .timeline-container {
+    width: 100%;
+  }
+}
 
 
