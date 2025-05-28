@@ -193,7 +193,7 @@ canvas {
 
 .intro-text{
   width: 70%;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 #toggle-button {
@@ -215,6 +215,24 @@ canvas {
     color: #fff; /* White text on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for hover effect */
 }
+
+.social-icons {
+  margin-bottom: 80px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.social-icons img {
+  width: 64px;
+  height: 64px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
 
 
 section {
