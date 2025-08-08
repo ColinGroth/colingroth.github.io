@@ -232,7 +232,7 @@ const rightArrow = document.querySelector('.timeline-arrow.right');
 let currentIndex = Array.from(stages).findIndex(stage => stage.classList.contains('active'));
 
 // Fallback to 0 if no stage is marked as active
-if (currentIndex === -1) currentIndex = 1;
+if (currentIndex === -1) currentIndex = 0;
 
 // Function to scroll to the active element
 function scrollToActive(shouldScroll = true) {
