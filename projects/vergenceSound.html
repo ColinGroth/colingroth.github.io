@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overdriving Visual Depth Perception via Sound Modulation in VR</title>
+    <link rel="stylesheet" href="pp_styles.css">
+</head>
+<body>
+    <div class="back-button">
+        <a href="../index.html#publications">← Back to Main Page</a>
+    </div>
+	
+	<canvas id="background"></canvas>
+
+    <div class="project-page">
+
+
+        <!-- Teaser Image -->
+        <div class="teaser-image">
+            <img src="../images/vergenceSound_teaser.jpg" alt="Teaser Image for the Project" />
+        </div>
+
+        <!-- Title -->
+        <div class="title">
+            <h1>Overdriving Visual Depth Perception via Sound Modulation in VR</h1>
+        </div>
+
+        <!-- Conference/Type -->
+        <div class="conference">
+            <p><em>Published in IEEE Transactions on Visualization and Computer Graphics (TVCG, Proc. IEEE VR), 2026</em></p>
+            <p><em>Presented at IEEE Virtual Reality (VR), March 2026</em></p>
+        </div>
+
+        <!-- Authors with Affiliations -->
+        <div class="authors">
+            <div class="author">
+                <strong>Daniel Jiménez-Navarro</strong>
+                <div class="affiliation">Max Planck Institute for Informatics</div>
+            </div>
+            <div class="author">
+                <strong>Colin Groth</strong>
+                <div class="affiliation">New York University</div>
+            </div>
+            <div class="author">
+                <strong>Xi Peng</strong>
+                <div class="affiliation">University of North Carolina</div>
+            </div>
+			<div class="author">
+                <strong>Jorge Pina</strong>
+                <div class="affiliation">University of Zaragoza</div>
+            </div>
+			<div class="author">
+                <strong>Qi Sun</strong>
+                <div class="affiliation">New York University</div>
+            </div>
+			            <div class="author">
+                <strong>Praneeth Chakravarthula</strong>
+                <div class="affiliation">University of North Carolina</div>
+            </div>
+            <div class="author">
+                <strong>Karol Myszkowski</strong>
+                <div class="affiliation">Max Planck Institute for Informatics</div>
+            </div>
+			<div class="author">
+                <strong>Hans-Peter Seidel</strong>
+                <div class="affiliation">Max Planck Institute for Informatics</div>
+            </div>
+			<div class="author">
+                <strong>Ana Serrano</strong>
+                <div class="affiliation">University of Zaragoza</div>
+            </div>
+        </div>
+
+        <!-- PDF Link -->
+        <div class="paper-link">
+            <a href="../papers/VergenceSound_IEEEVR26.pdf" target="_blank">📄 Download Paper (PDF)</a>
+        </div>
+		
+		        <!-- Supplementary Materials -->
+        <div class="paper-link">
+            <a href="../papers/VergenceSound_IEEEVR26_supplement.pdf" target="_blank">📄 Download Supplementary Materials (PDF)</a>
+        </div>
+
+        <!-- Abstract Section -->
+        <div class="abstract">
+            <h2>Abstract</h2>
+            <p> Our ability to perceive and navigate the spatial world is a cornerstone of human experience, relying on the integration of visual and auditory cues to form a coherent sense of depth and distance. In stereoscopic 3D vision, depth perception requires fixation of both eyes on a target object, which is achieved through vergence movements, with convergence for near objects and divergence for distant ones. In contrast, auditory cues provide complementary depth information through variations in loudness, interaural differences (IAD), and the frequency spectrum.
+    We investigate the interaction between visual and auditory cues and examine how contradictory auditory information can overdrive visual depth perception in virtual reality (VR). When a new visual target appears, we introduce a spatial discrepancy between the visual and auditory cues: the visual target is shifted closer to the previously fixated object, while the corresponding sound localization is displaced in the opposite direction.
+By integrating these conflicting cues through multimodal processing, the resulting percept is biased toward the intended depth location. This audiovisual fusion counteracts depth compression, thus reducing the required vergence magnitude and enabling faster gaze retargeting. Such audio-driven depth enhancement may further help mitigate the vergence–accommodation conflict (VAC) in scenarios where physical depth must be compressed.
+    In a series of psychophysical studies, we first assess the efficiency of depth overdriving for various VR-relevant combinations of initial fixations and shifted target locations, considering different scenarios of audio displacements and their loudness and frequency parameters. Next, we quantify the resulting speedup in gaze retargeting for target shifts that can be successfully overdriven by sound manipulations. Finally, we apply our method in a naturalistic VR scenario where user interface interactions with the scene show an extended perceptual depth. </p>
+        </div>
+
+
+
+        <!-- Video Demonstration 
+        <div class="video">
+            <h2>Teaser Video</h2>
+            <video controls width="600">
+                <source src="https://graphics.tu-bs.de/upload/publications/groth23wavelets/Final_publish.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+			<h2>Presentation Video</h2>
+			<iframe width="600" height="338"
+				src="https://www.youtube.com/embed/VqgEgkRDEiE" 
+				title="YouTube video player" 
+				frameborder="0" 
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+				allowfullscreen>
+			</iframe>
+        </div>-->
+
+        <!-- Code Repository 
+        <div class="code">
+            <h2>Code</h2>
+            <a href="https://github.com/ColinGroth/Wavelet_Codec_360" target="_blank">🔗 View on GitHub</a>
+        </div>-->
+
+        <!-- BibTeX Citation -->
+        <div class="citation">
+            <h2>BibTeX Citation</h2>
+            <pre>
+@article{navarro2026overdriving,
+  title = {Overdriving Visual Depth Perception via Sound Modulation in VR},
+  author = {Daniel Jiménez-Navarro, Colin Groth, Xi Peng, Jorge Pina, Qi Sun, Praneeth Chakravarthula, Karol Myszkowski, Hans-Peter Seidel, and Ana Serrano},
+  journal = {{IEEE} Transactions on Visualization and Computer Graphics ({TVCG}, Proc. {IEEE} {VR})},
+  year = {2026}
+}
+            </pre>
+        </div>
+    </div>
+	
+  <script src="pp_script.js"></script>
+</body>
+</html>
